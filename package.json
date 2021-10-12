@@ -1,0 +1,27 @@
+{
+  "name": "bean",
+  "version": "1.0.0",
+  "description": "b e a n s",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production --watch --progress --config webpack/webpack.prod.js",
+    "pack": "webpack --mode=development --watch --progress --config ./webpack.dev.js",
+    "server": "webpack serve --mode=production --watch --progress --config ./webpack.config.js",
+    "devServer": "webpack serve --mode=development --watch --progress --config ./webpack.dev.js"
+  },
+  "author": "Tayler Miller <taylermiller360@gmail.com> (https://github.com/OnesAndZer0s)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "html-webpack-plugin": "^5.3.2",
+    "eslint-webpack-plugin": "^3.0.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
