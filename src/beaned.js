@@ -48,7 +48,7 @@ else if ( !window.location.href.includes( "training_sessions" ) ) {
     window.location.replace( `https://membean.com/training_sessions/${id}/user_state` );
   } );
 } else if ( !window.MBActive ) {
-  var percent = Math.random() * 0.15 + 0.85;
+  var percent = Math.random() * 0.10 + 0.90;
   var right = 0;
   var wrong = 1;
 
