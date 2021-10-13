@@ -136,14 +136,15 @@ else if ( !window.location.href.includes( "training_sessions" ) ) {
     if ( Ext.fly( "word-page" ) ) 
       currentTrainer.advance( Ext.get( document.querySelector( "#trainer-nav > form:nth-child(2)" ) ) );
     else 
-    if ( right / wrong < percent ){
-      currentTrainer.currentQuiz.fireEvent( "correct" );
-      right++;
-    }
-    else {
-      currentTrainer.currentQuiz.fireEvent( "incorrect" );
-      wrong++;
-    }
+      currentTrainer.currentQuiz.fireEvent( ( percent < Math.random() ) ? "incorrect" : "correct" );
+    // if ( right / wrong < percent ){
+    //   currentTrainer.currentQuiz.fireEvent( "correct" );
+    //   right++;
+    // }
+    // else {
+    //   currentTrainer.currentQuiz.fireEvent( "incorrect" );
+    //   wrong++;
+    // }
     
     
     
